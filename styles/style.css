@@ -12,23 +12,41 @@ body, .font{
     color: #fd6e0a;
 }
 .btn-primary{
-    padding: 18px 35px;
+    padding: 15px 35px;
     border-radius: 5px;
     background-color: #fd6e0a;
     border: 0;
     font-weight: 700;
     color: #fff;
     transition: 0.4s ease;
+    font-family: 'open sans',sans-serif;
+}
+.btn-secondary{
+    padding: 15px 35px;
+    border-radius: 5px;
+    color: #fd6e0a;
+    background-color: transparent;;
+    border: 1px solid #fd6e0a;
+    font-weight: 700;
+    transition: 0.4s ease;
+    font-family: 'open sans',sans-serif;
 }
 /* shared style  */
-
+.header{
+    background-color: #fff8f3;
+    background-image: url('../images/header_bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin: 0 200px;
 }
-
+.logo {
+    flex-basis: 50%;
+}
 .logo h1{
     width: 121px;
     height: 61px;
@@ -37,12 +55,15 @@ nav{
     color: #181818;
     margin-top: 50px;
 }
-
+.menu{
+    flex-basis: 50%;
+}
 .menu > ul{
     list-style: none;
     display: flex;
     align-items: center;
     margin-top: 50px;
+    justify-content: flex-end;
 }
 .menu li{
     margin-right: 50px;
@@ -57,8 +78,140 @@ nav{
     background-color: #10ac84;
 }
 
-/* header section  */
+/* banner section  */
 
-.header{
-    background-color: #fff8f3;
+.banner{
+    display: flex;
+    align-items: center;
+    padding: 30px 30px 0px 180px;
+    justify-content: space-between;
 }
+.banner-container{
+
+    max-width: 594px;
+}
+.banner img{
+    width: 500px;
+}
+.banner-gretting{
+    font-size: 45px;
+    font-weight: 600;
+    color: #474747;
+}
+.banner-title{
+    font-size: 70px;
+    font-weight: 700;
+    color: #181818;
+    margin-bottom: 20px;
+}
+.banner-description{
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 30px;
+}
+.banner-container button{
+    margin-right: 20px;
+}
+/* banner section end  */
+/* banner shared style */
+.section-title{
+    font-size: 35px;
+    color: #181818;
+    margin-bottom: 30px;
+}
+.section-para{
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 30px;
+}
+/* banner shared style end  */
+.main-container > *{
+    margin: 130px 230px;
+    margin-top: 130px!important;
+    width: 1140px!important;
+    margin: 0 auto;
+}
+.about-me{
+    text-align: center;
+    background-color: #fff8f3;
+    padding: 155px;
+}
+
+.main-container .about-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-info .contact-item{
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 5px;
+}
+
+/* My expertise started  */
+.my-expertise{
+    text-align: center;
+}
+.my-expertise .ex-padd{
+    padding: 0px 115px;
+}
+.my-skills{
+    display: flex;
+    text-align: left;
+    column-gap: 24px;
+}
+.my-skills .my-skills-item{
+    width: 267px;
+    height: 377px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+    margin-top: 30px;
+}
+.my-skills-item > *{
+    margin-bottom: 20px;
+}
+.my-skills-item p{
+    font-size: 16px;
+    line-height: 1.75;
+    color: #757575;
+}
+
+/* My expertise end  */
+
+/* My resume started  */
+
+.my-resume .section-title{
+    margin-bottom: 100px;
+    text-align: center;
+}
+.my-resume .resume-info{
+    display: flex;
+    justify-content: space-between;
+}
+.resume-info-title{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    color: #474747;
+}
+.my-resume .Edu-exp-list{
+    width: 511px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.edu-exp-title{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    color: #474747;
+}
+.Edu-exp-list .organization-name{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    color: #757575;
+    margin: 5px 0px 20px 0px;
+}
+/* My resume end  */
