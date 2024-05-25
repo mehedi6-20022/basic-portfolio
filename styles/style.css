@@ -20,6 +20,7 @@ body, .font{
     color: #fff;
     transition: 0.4s ease;
     font-family: 'open sans',sans-serif;
+    cursor: pointer;
 }
 .btn-secondary{
     padding: 15px 35px;
@@ -28,8 +29,13 @@ body, .font{
     background-color: transparent;;
     border: 1px solid #fd6e0a;
     font-weight: 700;
-    transition: 0.4s ease;
+    transition: 0.7s ease all;
     font-family: 'open sans',sans-serif;
+    cursor: pointer;
+}
+.cv-download{
+    text-decoration: none;
+    color: #fff;
 }
 /* shared style  */
 .header{
@@ -77,6 +83,11 @@ nav{
 .btn-primary:hover{
     background-color: #10ac84;
 }
+.btn-secondary:hover{
+    background-color: #fd6e0a;
+    color: #fff!important;
+}
+
 
 /* banner section  */
 
@@ -180,6 +191,78 @@ nav{
 
 /* My expertise end  */
 
+/* my skills bars started  */
+
+.my-skill-bars .skill-bars-title{
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #474747;
+}
+.all-skill{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.my-skill-bars .skills{
+    width: 48%;
+}
+.my-skill-bars .skills-name{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    color: #474747;
+    margin-bottom: 15px;
+}
+.skill-bars{
+    background: #f3f3f3;
+    height: 8px;
+    border-radius: 5px;
+    margin-bottom: 24px;
+}
+.bars-per{
+    background: #fd6e0a;
+    height: 8px;
+    border-radius: 5px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+    cursor: pointer;
+}
+.bars-per::before{
+    content: attr(per);
+    position: absolute;
+    right: 0;
+    top: -45px;
+    background-color: #fd6e0a;
+    padding: 3px 6px;
+    border-radius: 4px;
+    transform: translateX(50%);
+    font-size: 18px;
+    color: #474747;
+    cursor: pointer;
+}
+.bars-per::after{
+    content: '';
+    background-color: #fd6e0a;
+    height: 15px;
+    width: 20px;
+    position: absolute;
+    top: -25px;
+    right: 0;
+    transform: translateX(40%) rotate(45deg);
+    z-index: -1;
+}
+@keyframes fillBars {
+    from{
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+/* my skills bars end */
+
 /* My resume started  */
 
 .my-resume .section-title{
@@ -213,5 +296,10 @@ nav{
     text-align: left;
     color: #757575;
     margin: 5px 0px 20px 0px;
+    cursor: pointer;
+}
+.btn-download{
+    text-align: center;
+    margin-top: 50px;
 }
 /* My resume end  */
