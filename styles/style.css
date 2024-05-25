@@ -303,3 +303,92 @@ nav{
     margin-top: 50px;
 }
 /* My resume end  */
+
+/* portfolio section started */
+
+.portfolio-area .section-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.all-portfolio{
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio-area img{
+    margin-bottom: 24px;
+    vertical-align:middle;
+    display: inline-block;
+    width: 100%;
+    flex-wrap: nowrap;
+    cursor: pointer;
+}
+.portfolio-area .portfolio-img{
+    flex-basis: 32%;
+}
+
+/* portfolio section end */
+
+/* footer started  */
+footer{
+    margin-top: 130px;
+    background-color: #fff8f3;
+    height: 750px;
+    width: 100%;
+    position: relative;
+}
+.footer-area{
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-area > *{
+    margin-top: 130px;
+    width: 47%;
+}
+
+.footer-title{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    color: #181818;
+    margin-bottom: 25px;
+}
+.footer-para{
+    font-size: 16px;
+    text-align: left;
+    color: #474747;
+    width: 562px;
+    margin-bottom: 30px;
+}
+.social-link img{
+    margin-right: 25px;
+    font-size: 100px;
+    height: 30px;
+    width: 30px;
+}
+.footer-contact .common, textarea{
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 24px;
+    color: #757575;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    text-transform: ;
+}
+.footer-contact textarea{
+    height: 150px;
+}
+footer .copyright{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #474747;
+    font-size: 16px;
+    font-weight: 500;
+}
