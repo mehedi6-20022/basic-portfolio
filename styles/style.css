@@ -80,7 +80,7 @@ nav{
     color: #474747;
     font-size: 20px;
 }
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: #10ac84;
 }
 .btn-secondary:hover{
@@ -325,7 +325,33 @@ nav{
 .portfolio-area .portfolio-img{
     flex-basis: 32%;
 }
-
+.image{
+    transition: 0.4s ease;
+}
+.image-container{
+    position: relative;
+}
+.image-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.4s ease;
+    color: #474747;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+.image-container:hover .image{
+    opacity: 0.4;
+}
+.image-container:hover .image-text{
+    opacity: 1;
+}
+.image-container .image-text button{
+    margin-top: 24px;
+}
 /* portfolio section end */
 
 /* footer started  */
@@ -366,6 +392,9 @@ footer{
     font-size: 100px;
     height: 30px;
     width: 30px;
+}
+.social-link img:hover{
+    transform: translate(1.1);
 }
 .footer-contact .common, textarea{
     width: 100%;
