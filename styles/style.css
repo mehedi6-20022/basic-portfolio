@@ -43,6 +43,7 @@ body, .font{
     background-image: url('../images/header_bg.png');
     background-repeat: no-repeat;
     background-position: bottom right;
+    background-attachment: fixed;
 }
 nav{
     display: flex;
@@ -98,7 +99,6 @@ nav{
     justify-content: space-between;
 }
 .banner-container{
-
     max-width: 594px;
 }
 .banner img{
